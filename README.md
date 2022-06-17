@@ -51,7 +51,7 @@ hostname
 
 # Set Hostname if you want
 hostnamectl set-hostname <MyComputerHostName>.MyDomain.Com.Br
-host <MyComputerHostsName>.intranet.ufscar.br
+host <MyComputerHostsName>.MyDomain.Com.Br
 
 # For check purposes
 host MyDomain.Com.Br
@@ -108,8 +108,8 @@ systemctl status sssd
 id <ad_user_login>@MyDomain.Com.Br
 
 sudo samba-tool domain info MyDomain.Com.Br
-sudo samba-tool group list -U <user> -H ldap://MyDomainUser.ufscar.br
-sudo samba-tool user list -U <user> -H ldap://MyDomainUser.ufscar.br
+sudo samba-tool group list -U <user> -H ldap://MyDomainUser.Com.Br
+sudo samba-tool user list -U <user> -H ldap://MyDomainUser.Com.Br
 sudo samba-tool computer show <computerhostname> -U <user> -H ldap://MyDomainUser.Com.Br
 ```
 
